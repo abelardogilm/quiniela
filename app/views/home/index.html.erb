@@ -1,0 +1,24 @@
+aaaaaaa
+
+<script type="text/javascript">
+  function ChangeValue(input, pos){
+    val = $(input).find("input").val();
+    valn = (val + 1) % 3
+    $(input).find("input").val(valn);
+      alert("sprite-" + pos + valn) ;
+    $(input).find("i").removeClass("sprite-" + pos + val).addClass("sprite-" + pos + valn);
+  }
+</script>
+<%=form_tag guardar_path do %>
+<table class="table-bordered">
+<% Item.all.each do |item| %>
+<tr>
+  <td><%=item.text%></td>
+  <td><span onclick="ChangeValue(this,1);"><i class="sprite sprite-1<%=item.val1%> badge-important"></i><input id="valor_<%=item.id%>_1" name="valor[<%=item.id%>][1]" type="hidden" value="<%=item.val1 %>" class="check-input"></span></td>
+  <td><span onclick="ChangeValue(this,'x');"><i class="sprite sprite-x<%=item.val2%> badge-important"></i><input id="valor_<%=item.id%>_x" name="valor[<%=item.id%>][x]" type="hidden" value="<%=item.val2 %>" class="check-input"></span></td>
+  <td><span onclick="ChangeValue(this,2);"><i class="sprite sprite-2<%=item.val3%> badge-important"></i><input id="valor_<%=item.id%>_2" name="valor[<%=item.id%>][2]" type="hidden" value="<%=item.val3 %>" class="check-input"></span></td>
+</tr>
+<%end%>
+</table>
+<%= submit_tag "guardar"%>
+<% end%>

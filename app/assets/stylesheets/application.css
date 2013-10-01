@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+.check-input{
+    width: 10px;
+
+}
+
+.icon-value1{
+  background-position: -288px 0 !important;
+}
+
+.icon-value2 {
+  background-position: -168px 0 !important;
+}
+
+.icon-value0 {
+  background-position: 14px 14px !important;
+}
+
+
+.sprite {
+    display: inline-block;
+      width: 14px;
+      height: 14px;
+      *margin-right: .3em;
+      line-height: 14px;
+      vertical-align: text-top;
+      background-repeat: no-repeat;
+      margin-top: 1px;
+    background: url("../img/sprite1x2.png") no-repeat;
+}
+
+.sprite-10 {
+    width: 24px;
+    height: 26px;
+    background-position: -0px -74px;
+}
+
+.sprite-11 {
+    width: 24px;
+    height: 26px;
+    background-position: -105px -37px;
+}
+
+.sprite-12 {
+    width: 24px;
+    height: 26px;
+    background-position: -105px -0px;
+}
+
+.sprite-20 {
+    width: 24px;
+    height: 26px;
+    background-position: -70px -37px;
+}
+
+.sprite-21 {
+    width: 24px;
+    height: 26px;
+    background-position: -35px -37px;
+}
+
+.sprite-22 {
+    width: 24px;
+    height: 26px;
+    background-position: -0px -37px;
+}
+
+.sprite-x0 {
+    width: 24px;
+    height: 26px;
+    background-position: -70px -0px;
+}
+
+.sprite-x1 {
+    width: 24px;
+    height: 26px;
+    background-position: -35px -0px;
+}
+
+.sprite-x2 {
+    width: 24px;
+    height: 26px;
+    background-position: -0px -0px;
+}

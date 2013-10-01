@@ -1,0 +1,29 @@
+<h1>Listing item_data</h1>
+
+<table>
+  <tr>
+    <th>Text</th>
+    <th>Val1</th>
+    <th>Val2</th>
+    <th>Val3</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @item_data.each do |item_datum| %>
+  <tr>
+    <td><%= item_datum.text %></td>
+    <td><%= item_datum.val1 %></td>
+    <td><%= item_datum.val2 %></td>
+    <td><%= item_datum.val3 %></td>
+    <td><%= link_to 'Show', item_datum %></td>
+    <td><%= link_to 'Edit', edit_item_datum_path(item_datum) %></td>
+    <td><%= link_to 'Destroy', item_datum, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Item datum', new_item_datum_path %>

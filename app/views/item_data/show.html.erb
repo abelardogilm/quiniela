@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Text:</b>
+  <%= @item_datum.text %>
+</p>
+
+<p>
+  <b>Val1:</b>
+  <%= @item_datum.val1 %>
+</p>
+
+<p>
+  <b>Val2:</b>
+  <%= @item_datum.val2 %>
+</p>
+
+<p>
+  <b>Val3:</b>
+  <%= @item_datum.val3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_datum_path(@item_datum) %> |
+<%= link_to 'Back', item_data_path %>
